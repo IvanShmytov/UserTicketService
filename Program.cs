@@ -12,25 +12,23 @@ namespace UserTicketService
         {
         }
     }
-    public class UserRepository : IUserRepository
+    public class BookRepository : IBookRepository
     {
-        public IEnumerable<User> FindAll()
+        public IEnumerable<Book> FindAll()
         {
             return null;
         }
     }
 
-    public interface IUserRepository
+    public interface IBookRepository
     {
-        IEnumerable<User> FindAll();
+        IEnumerable<Book> FindAll();
     }
 
-    public class User
+    public class Book
     {
-        public string Name
-        {
-            get;
-            set;
-        }
+        public string Title
+        { get; set; }
     }
 }
+
